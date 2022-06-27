@@ -20,6 +20,20 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid red;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+}
+
 .header,
 .benefits,
 .services,
@@ -31,6 +45,10 @@ body {
 /* Header */
 .link {
   text-decoration: none;
+}
+
+.header .logo {
+  margin-right: 93px;
 }
 
 .logo {
@@ -47,10 +65,26 @@ body {
 
 .list {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.navigation > .item:not(:last-child),
+.contacts > .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts {
+  margin-left: auto;
 }
 
 .navigation .link,
 .contacts .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -78,14 +112,17 @@ body {
 
 .banner {
   background-color: var(--footer-bg-color);
+  text-align: center;
 }
 
 .banner-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   color: var(--primary-bg-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -117,6 +154,9 @@ body {
 
 .title,
 .section-title {
+  margin-top: 0;
+  margin-bottom: 0;
+
   color: var(--heading-text);
   font-weight: var(--bold);
 }
@@ -131,6 +171,11 @@ body {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+}
+
+.text {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .team {
