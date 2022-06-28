@@ -74,7 +74,6 @@ img {
 
 .list {
   list-style: none;
-  
 }
 
 ul {
@@ -257,7 +256,19 @@ ul {
 
 /* Portfolio */
 
+.filter {
+  margin-bottom: 50px;
+  }
+
+.filter .item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .filter-button {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border-width: 0;
+  
   background-color: var(--additional-bg-color);
   color: var(--heading-text);
   font-family: inherit;
@@ -278,6 +289,10 @@ ul {
 .filter-button:focus {
   background-color: var(--blue-color);
   color: var(--primary-bg-color);
+}
+
+.projects.flexbox {
+  flex-wrap: wrap;
 }
 
 .projects .title {
