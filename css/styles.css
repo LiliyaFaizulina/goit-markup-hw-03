@@ -298,7 +298,9 @@ ul {
 }
 
 .project {
+  width: calc((100% - 60px) / 3);
   border: 1px solid var(--card-border-color);
+  
 }
 
 .project:not(:nth-child(3n)) {
